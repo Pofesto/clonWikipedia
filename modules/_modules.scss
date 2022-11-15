@@ -1,24 +1,28 @@
 //-------------------->HEADER<--------------------
-//header-container
+//Contenedor superior que contiene el logo escrito
+//de wikipedia, un eslogan, y una imagen del logo
+//visual de wikipedia.
 .header-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    //header-container->img
+    //imagen del logo visual de wikipedia, está imagen
+    //está sujeta a cambios por el responsive.
     img {
         display: inline-block;
         vertical-align: middle;
     }
-    //header-container->logotipo-container
+    //contenedor del logo escrito de wikipedia, y el
+    //eslogan.
     .logotipo-container {
         display: flex;
         flex-direction: column;
-        //header-container->logotipo-container->logotipo-container__logo
+        //Logo escrito que va encima del eslogan.
         .logotipo-container__logo {
             display: inline-block;
             vertical-align: middle;
         }
-        //header-container->logotipo-container->logotipo-container__eslogan
+        //Eslogan que va debajo del logo escrito.
         .logotipo-container__eslogan {
             display: inline-block;
         }
@@ -26,13 +30,16 @@
     }
 }
 //-------------------->SECTION IDIOMAS<--------------------
+//Contenedor del areá de idiomas disponibles de wikipedia
+//este contenedor está sujeto a cambios por el responsive.
 .container-idioma {
     width: auto;
     height: auto;
     margin-top: 7rem;
+    //configuración de cada uno de los articulos que contiene
+    //cada uno de los idiomas. Esto está sujeto a adiciones por
+    //el responsive.
     .contaier-idioma__articulo {
-        width: 33%;
-        height: 6.4rem;
         float: left;
         display: block;
         position: relative;
@@ -40,81 +47,64 @@
         left: auto;
         right: auto;
         bottom: auto;
-        margin: 0 0 1.6rem;
-        padding: 0 1.6rem;
         text-align: center;
+        //Titulo, o nombre del idioma en cada articulo.
         a {
-            font-weight: 700;
-            color: $color-fuente-secundario;
-            font-size: 1.3rem;
         }
+        //Cantidad de articulos que tiene la wikipedia en ese idioma.
         p {
-            color: $color-fuente-principal;
-            font-size: 1.3rem;
-            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         }
     }
 }
 //-------------------->NAV<--------------------
+//Nav del sitio, aquí tenemos dos contenedores,
+//el primero es form_container, el que está
+//aquí abajo, este se encarga de contener la 
+//barra de busqueda, y más abajo hay un pseudo-
+//desplegable que se llama desplegable_container.
 .form_container {
-    max-width: 95%;
-    width: 450px;
-    height: 4.4rem;
-    margin: 0 auto;
-    margin-top: 40rem;
     text-align: center;
     vertical-align: middle;
     display: flex;
-    border: 1px solid $color-fuente-principal;
     align-items: center;
     justify-content: space-between;
     position: relative;
     bottom: 410px;
     transition-property: all;
+    //botón azul que va dentro de la barra de busqueda.
     button {
-        height: 44px;
-        width: 55px;
-        border: 1px solid $color-fuente-principal;
-        border-right: 0;
-        background-color: $color-fuente-secundario;
+        //Simbolo de lupa que va dentro del botón azul.
         span {
-            width: 22px;
-            height: 22px;
-            background-image: url('./assets/search.png');
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: contain;
             display: inline-block;
         }
     }
+    //El input en donde podremos escribir dentro de la
+    //barra de busqueda. 
     input {
-        max-width: 82%;
-        width: 420px;
-        height: 4.2rem;
-        border: 3px solid blue;
         position: relative;
         display: inline-block;
-        padding-left: 10px;
     }
+    //detonador de una transición para agregar nuevos estilos al
+    //tener seleccionado el input, y avisar al usuario que ahora
+    //puede ingresar texto.
     input:focus {
         border-color: blue;
-        box-shadow: 1px 1px 1px blue inset, 1px 1px 8px blue;
+        box-shadow: 1px 1px 1px blue inset, 1px 1px 8px blue; //<<<<<<<<<<<- state
         outline: 0 none;
     }
+    //Pequeño desplegable que va dentro de la barra de busqueda
+    //en donde podremos seleccionar el idioma de nuestra busqueda.
     .form_container_desplegable {
         display: flex;
         position: absolute;
         right: 18%;
+        //Texto del desplegable.
         p {
             vertical-align: middle;
         }
+        //simbolo de flecha hacía abajo que indica que el desplegable
+        //puede mostrar más cosas al hacer click.
         span {
-            width: 10px;
-            height: 10px;
-            background-image: url('./assets/down_arrow.png');
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: contain;
             display: inline-block;
             position: relative;
             top: 2px;
@@ -122,142 +112,98 @@
         }
     }
 }
-nav {
-}
+//Desplegable de la parte central que tiene de leyenda:
+//"leer wikipedia en tu idioma". Aquí tenemos su container.
 .desplegable_container {
     z-index: 2;
-    margin: 0 auto;
-    width: 100%;
-    max-width: 271px;
-    border: 1px solid $color-fuente-principal;
-    height: 35px;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin-bottom: 3.0rem;
     position: relative;
-    background-color: white;
+    //Logo de idiomas que va en la izquierda dentro del desplegable.
     .desplegable_container__logo_idiomas {
-        width: 2.2rem;
-        height: 2.2rem;
-        background-image: url('./assets/idiomas.PNG');
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position: center;
         display: inline-block;
         position: relative;
         top: 1px;
         left: 2px;
     }
+    //Texto que dice la leyenda "leer wikipedia en tu idioma".
     p {
-        font-size: 1.4rem;
-        color: $color-fuente-secundario;
-        font-weight: 700;
-        line-height: 1;
-        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+       
     }
+    //Logo de flecha hacía abajo que indica que puede desplegar varias cosas
+    //al hacer click.
     .desplegable_container__logo_downarrow {
-        width: 2.2rem;
-        height: 2.2rem;
-        background-image: url('./assets/down_arrow_blue.png');
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position: center;
         display: inline-block;
         position: relative;
         top: 2px;
         right: 2px;
     }
 }
+//linea que decora el desplegable anterior, está linea
+//crece, y se encoge según el tamaño de pantalla.
+//está linea está detrás del desplegable.
 .linea_desplegable {
-    z-index: 1;
-    background-color: #c8ccd1;
-    max-width: 460px;
-    width: 80%;
-    margin: 0 auto;
-    height: 1px;
     position: relative;
     bottom: 48px;
 }
-
+//un pequeño hr para separar el contenido de nav y main.
 .separador_nav_main {
-    width: 98%;
-    margin: 0 auto;
-}
 
+}
+//-------------------->MAIN<--------------------
+//contenido main que está casi en la parte inferior,
+//estó contiene 2 contenedores, el primero es el de
+//wikis_container que contiene las dos secciones que
+//explican quien aloja wikipedia, y de donde se puede
+//descargar, el otro container es enlaces, que
+//contiene las categorias de los articulos de wikipedia.
 main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    //contenedor de los 2 contenedores que explican quien aloja
+    //wikipedia, y de donde escargarse.
     .wikis_container {
         order: 2;
         display: flex;
         justify-content: center;
         flex-direction: column;
+        align-items: center;
+        //contenedor que explica quien aloja wikipedia.
         .wikimedia_container {
-            height: auto;
-            width: 96%;
-            margin: 0 auto;
-            text-align: center;
-            margin-bottom: 20px;
             position: absolute;
             top: 660px;
+            //logo negro que va en la parte superior.
             .wikimedia_container__logo {
                 display: inline-block;
-                width: 40px;
-                height: 40px;
-                background-image: url(./assets/wikimedia.png);
-                background-size: contain;
-                background-position: center;
-                background-repeat: no-repeat;
             }
+            //Texto explicativo.
             .wikimedia_container__texto {
-                font-size: 1.4rem;
-                line-height: 1.5;
-                font-family: 'Roboto', sans-serif;
-                font-weight: lighter;
             }
+            //Enlace que debería redirigir a un sitio de donaciones.
             .wikimedia_container_enlace {
-                font-size: 1.3rem;
-                line-height: 1.5;
-                font-family: 'Roboto', sans-serif;
-                color: $color-fuente-secundario;
             }
         }
+        //Container que explica de donde se puede descargar wikipedia.
         .descargar_container {
             order: 3;
-            height: auto;
-            width: 96%;
-            margin: 0 auto;
-            text-align: center;
-            margin-top: 20px;
-            background-color: #f8f9fa;
+            //Container que aloja el logo y el titulo, ya que tienen posiciones
+            //fáciles de llegar por medio de un flex.
             .descargar_container__logoYtitulo {
-                width: 280px;
                 display: flex;
-                margin: 0 auto;
                 justify-content: space-around;
+                //Logo cuadradito de wikipedia.
                 .descargar_container__logo {
                     display: inline-block;
-                    width: 30px;
-                    height: 30px;
-                    background-image: url(./assets/descargar.png);
-                    background-size: contain;
-                    background-position: center;
-                    background-repeat: no-repeat;
-                    vertical-align: middle;
                 }
+                //titulo del container.
                 .descargar_container__titulo {
-                    font-size: 1.4rem;
-                    line-height: 1.5;
-                    font-family: 'Roboto', sans-serif;
-                    vertical-align: middle;
                     position: relative;
                     top: 8px;
                 }
             }
+            //Texto explicativo.
             .descargar_container__texto {
                 font-size: 1.4rem;
                 line-height: 1.5;
@@ -265,96 +211,75 @@ main {
                 font-weight: lighter;
                 margin-top: 10px;
             }
+            //container que tiene ambos botones de los enlaces de descarga.
             .descargar_container__enlaces {
                 display: flex;
                 justify-content: center;
-                margin-top: 10px;
+                //container de la configuración visual de los enlaces.
                 .descargar_container__enlace {
-                    width: 120px;
-                    height: 36px;
-                    background-image: url(./assets/googleplay.png);
-                    background-size: contain;
-                    background-position: center;
-                    background-repeat: no-repeat;
+
                 }
+                //modifier para poner un backgroud distinto.
                 .appstore {
-                    background-image: url(./assets/appstore.png);
+
                 }
             }
 
         }
     }
+    //Contenedor que contiene cada uno de los enlaces a las distintas
+    //categorias o temas que tiene la wikipedia.
     .enlaces {
         order: 1;
-        max-width: 80%;
-        width: 1200px;
-        height: auto;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
         align-items: center;
-        margin-top: 140px;
+        //enlace general para cada uno de los enlaces.
         .enlace_container {
-            width: 50%;
-            min-height: 50px;
             display: flex;
-            margin-bottom: 20px;
-            padding-right: 10px;
+            //imagen simbolica que representa cada uno de los temas
+            //de cada enlace.
             img {
-                width: 50px;
-                height: 50px;
             }
+            //container que tiene en su interior un titulo, y un texto.
             .enlace_container__texto {
+                //enlace que sirve de titulo para cada categoria.
                 .enlace_container__enlace {
-                    font-size: 1.5rem;
-                    line-height: 1.5;
-                    font-family: 'Roboto', sans-serif;
-                    font-weight: lighter;
-                    color: $color-fuente-secundario;
                 }
+                //corta explicación de cada categoria.
                 .enlace_container__parrafo {
-                    word-wrap: break-word;
-                    font-size: 1.3rem;
-                    line-height: 1.5;
-                    font-family: 'Roboto', sans-serif;
-                    font-weight: lighter;
                 }
             }
         }
     }
 }
+//pequeño hr que separa el main del footer.
 .separador_main_footer {
-    width: 90%;
-    margin: 0 auto;
-    margin-bottom: 20px;
+
 }
+//-------------------->FOOTER<--------------------
+//Footer que tiene un container en donde se acomoda
+//todo lo relacionado con licencias, e información
+//extra.
 footer {
-    height: auto;
+
+    //este contenedor alinea cada uno de los elementos
+    //visibles del footer
     .footer_container {
         display: flex;
         justify-content: center;
-        height: auto;
+
+        //texto de cada uno de los elementos del footer
         p {
-            text-align: center;
-            font-size: 1.2rem;
-            line-height: 1.5;
-            font-family: 'Roboto', sans-serif;
-            font-weight: lighter;
+
+            //enlaces extras.
             a {
-                font-size: 1.2rem;
-                line-height: 1.5;
-                font-family: 'Roboto', sans-serif;
-                font-weight: lighter;
-                color: $color-fuente-secundario;
+
             }
+            //el punto detrás de cada enlace.
             .separador {
                 display: inline-block;
-                width: 4px;
-                height: 4px;
-                border-radius: 2px;
-                background-color: black;
-                margin-left: 6px;
-                margin-right: 4px;
             }
         }
     }
