@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clon Wikipedia</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" media="screen and (min-width: 480px)" href="./desktop/style.css">
+    <link rel="stylesheet" media="screen and (min-width: 780px)" href="./large_desktop/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <img src="./assets/wikipedia_logo.png" alt="Logo normal de Wikipedia">
+            <h3 class="logotipo-container">
+                <span class="logotipo-container__logo"></span>
+                <strong class="logotipo-container__eslogan">La enciclopedia libre</strong>
+            </h3>
+        </div>
+    </header>
+    <section class="container-idioma">
+        <article class="contaier-idioma__articulo">
+            <a>Español</a>
+            <p>1 755 000+ articulos</p>
+        </article>
+        <article class="contaier-idioma__articulo">
+            <a>English</a>
+            <p>6 458 000+ articles</p>
+        </article>
+        <article class="contaier-idioma__articulo">
+            <a>日本語</a>
+            <p>1 314 000+ 記事</p>
+        </article>
+        <article class="contaier-idioma__articulo">
+            <a>Русский</a>
+            <p>1 798 000+ статей</p>
+        </article>
+        <article class="contaier-idioma__articulo">
+            <a>Français</a>
+            <p>2 400 000+ articles</p>
+        </article>
+        <article class="contaier-idioma__articulo">
+            <a>Deutsch</a>
+            <p>2 667 000+ Artikel</p>
+        </article>
+        <article class="contaier-idioma__articulo">
+            <a>Italiano</a>
+            <p>1 742 000+ voci</p>
+        </article>
+        <article class="contaier-idioma__articulo">
+            <a>中文</a>
+            <p>1 256 000+ 条目 / 條目</p>
+        </article>
+        <article class="contaier-idioma__articulo">
+            <a>Português</a>
+            <p>1 085 000+ artigos</p>
+        </article>
+        <article class="contaier-idioma__articulo">
+            <a>العربية</a>
+            <p>1 159 000+ مقالة</p>
+        </article>
+    </section>
+    <nav>
+        <form class="form_container">
+            <input id="searchInput" name="search" type="search" size="20" autofocus="autofocus" accesskey="F" dir="auto" autocomplete="off" style="padding-right: 64px; border: 0px;">
+            <div class="form_container_desplegable">
+                <p>ES</p>
+                <span></span>
+            </div>
+            <button>
+                <span></span>
+            </button>
+        </form>
+        <div class="desplegable_container">
+            <span class="desplegable_container__logo_idiomas"><!--palabras en chino--></span>
+            <p>Leer WikiPedia en tu idioma</p>
+            <span class="desplegable_container__logo_downarrow"><!--flecha abajo azul--></span>
+        </div>
+        <div class="linea_desplegable"></div>
+    </nav>
+    <hr class="separador_nav_main">
+    <!-- Main -->
+    <main>
+        <div class="wikis_container">
+            <div class="wikimedia_container">
+                <span class="wikimedia_container__logo"></span>
+                <p class="wikimedia_container__texto">
+                    Wikipedia es alojada por la Fundación Wikimedia, una organización sin fines de lucro que también alberga una gama de otros proyectos.
+                </p>
+                <a href="#" class="wikimedia_container_enlace">
+                    Puedes apoyar nuestro trabajo con una donación.
+                </a>
+            </div>
+            <div class="descargar_container">
+                <div class="descargar_container__logoYtitulo">
+                    <span class="descargar_container__logo"></span>
+                    <h3 class="descargar_container__titulo">
+                        Descargar Wikipedia para Android o iOS
+                    </h3>
+                </div>
+                <p class="descargar_container__texto">
+                    Guarda tus artículos favoritos para leerlos sin conexión, sincroniza tus listas de lectura en varios dispositivos y personaliza tu experiencia de lectura con la aplicación oficial de Wikipedia.
+                </p>
+                <div class="descargar_container__enlaces">
+                    <span class="descargar_container__enlace"></span>
+                    <span class="descargar_container__enlace appstore"></span>
+                </div>
+            </div>
+        </div>
+        <section class="enlaces">
+            <article class="enlace_container">
+                <img src="./assets/1.png" alt="">
+                <div class="enlace_container__texto">
+                    <a href="" class="enlace_container__enlace">
+                        Commons
+                    </a>
+                    <p class="enlace_container__parrafo">
+                        Foto libremente utilizables, y más
+                    </p>
+                </div>
+            </article>
+            <article class="enlace_container">
+                <img src="./assets/2.png" alt="">
+                <div class="enlace_container__texto">
+                    <a href="" class="enlace_container__enlace">
+                        Wikiviajes
+                    </a>
+                    <p class="enlace_container__parrafo">
+                        La guía de viajes libre
+                    </p>
+                </div>
+            </article>
+            <article class="enlace_container">
+                <img src="./assets/3.png" alt="">
+                <div class="enlace_container__texto">
+                    <a href="" class="enlace_container__enlace">
+                        Wikicionario
+                    </a>
+                    <p class="enlace_container__parrafo">
+                        El diccionario libre
+                    </p>
+                </div>
+            </article>
+            <article class="enlace_container">
+                <img src="./assets/4.png" alt="">
+                <div class="enlace_container__texto">
+                    <a href="" class="enlace_container__enlace">
+                        Wikilibros
+                    </a>
+                    <p class="enlace_container__parrafo">
+                        Libro de contenido libre
+                    </p>
+                </div>
+            </article>
+            <article class="enlace_container">
+                <img src="./assets/5.png" alt="">
+                <div class="enlace_container__texto">
+                    <a href="" class="enlace_container__enlace">
+                        Wikinoticias
+                    </a>
+                    <p class="enlace_container__parrafo">
+                        La fuente de noticias libre
+                    </p>
+                </div>
+            </article>
+            <article class="enlace_container">
+                <img src="./assets/6.png" alt="">
+                <div class="enlace_container__texto">
+                    <a href="" class="enlace_container__enlace">
+                        Wikidata
+                    </a>
+                    <p class="enlace_container__parrafo">
+                        Base de conocimiento libre
+                    </p>
+                </div>
+            </article>
+            <article class="enlace_container">
+                <img src="./assets/7.png" alt="">
+                <div class="enlace_container__texto">
+                    <a href="" class="enlace_container__enlace">
+                        Wikiversidad
+                    </a>
+                    <p class="enlace_container__parrafo">
+                        Plataforma educativa libre
+                    </p>
+                </div>
+            </article>
+            <article class="enlace_container">
+                <img src="./assets/8.png" alt="">
+                <div class="enlace_container__texto">
+                    <a href="" class="enlace_container__enlace">
+                        Wikiquote
+                    </a>
+                    <p class="enlace_container__parrafo">
+                        La colección de citas
+                    </p>
+                </div>
+            </article>
+            <article class="enlace_container">
+                <img src="./assets/9.png" alt="">
+                <div class="enlace_container__texto">
+                    <a href="" class="enlace_container__enlace">
+                        MediaWiki
+                    </a>
+                    <p class="enlace_container__parrafo">
+                        Aplicación Wiki libre, y abierta
+                    </p>
+                </div>
+            </article>
+            <article class="enlace_container">
+                <img src="./assets/10.png" alt="">
+                <div class="enlace_container__texto">
+                    <a href="" class="enlace_container__enlace">
+                        Wikisource
+                    </a>
+                    <p class="enlace_container__parrafo">
+                        La biblioteca
+                    </p>
+                </div>
+            </article>
+            <article class="enlace_container">
+                <img src="./assets/11.png" alt="">
+                <div class="enlace_container__texto">
+                    <a href="" class="enlace_container__enlace">
+                        Wikispecies
+                    </a>
+                    <p class="enlace_container__parrafo">
+                        Directio de especies libre
+                    </p>
+                </div>
+            </article>
+            <article class="enlace_container">
+                <img src="./assets/12.png" alt="">
+                <div class="enlace_container__texto">
+                    <a href="" class="enlace_container__enlace">
+                        MetaWiki
+                    </a>
+                    <p class="enlace_container__parrafo">
+                        Coordinación, y documentación comunitaria
+                    </p>
+                </div>
+            </article>
+        </section>
+    </main>
+    <hr class="separador_main_footer">
+    <footer>
+        <div class="footer_container">
+            <p>Esta página está disponible bajo la licencia 
+                <a href="#">licencia Creative Commons Atribución-CompartirIgual</a>
+                <span class="separador"></span><a href="#">Términos de uso</a> 
+                <span class="separador"></span><a href="#">Normativa de privacidad</a> 
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

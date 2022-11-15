@@ -1,0 +1,141 @@
+// @media (min-width: 800px) {
+//     main {
+//         display: flex;
+//         flex-direction: row;
+//         align-items: center;
+//         margin-top: 20px;
+//         margin-bottom: 20px;
+//         .wikis_container {
+//             display: flex;
+//             flex-direction: column;
+//             justify-content: space-around;
+//             margin-left: 70px;
+//             .wikimedia_container {
+//                 height: 200px;
+//                 width: 350px;
+//                 margin: 0 auto;
+//                 text-align: start;
+//                 margin-bottom: 20px;
+//                 display: flex;
+//                 .wikimedia_container__logo {
+//                     display: inline-block;
+//                     width: 40px;
+//                     height: 40px;
+//                     background-image: url(./assets/wikimedia.png);
+//                     background-size: contain;
+//                     background-position: center;
+//                     background-repeat: no-repeat;
+//                 }
+//                 .wikimedia_container_textos {
+//                     display: flex;
+//                     flex-direction: column;
+//                     .wikimedia_container__texto {
+//                         font-size: 1.4rem;
+//                         line-height: 1.5;
+//                         font-family: 'Roboto', sans-serif;
+//                         font-weight: lighter;
+//                     }
+//                     .wikimedia_container_enlace {
+//                         font-size: 1.3rem;
+//                         line-height: 1.5;
+//                         font-family: 'Roboto', sans-serif;
+//                         color: $color-fuente-secundario;
+//                     }
+//                 }
+//             }
+//             .descargar_container {
+//                 order: 2;
+//                 height: 200px;
+//                 width: 350px;
+//                 margin: 0 auto;
+//                 text-align: center;
+//                 margin-top: 20px;
+//                 background-color: #f8f9fa;
+//                 .descargar_container__logoYtitulo {
+//                     width: 280px;
+//                     display: flex;
+//                     margin: 0 auto;
+//                     justify-content: space-around;
+//                     .descargar_container__logo {
+//                         display: inline-block;
+//                         width: 30px;
+//                         height: 30px;
+//                         background-image: url(./assets/descargar.png);
+//                         background-size: contain;
+//                         background-position: center;
+//                         background-repeat: no-repeat;
+//                         vertical-align: middle;
+//                     }
+//                     .descargar_container__titulo {
+//                         font-size: 1.4rem;
+//                         line-height: 1.5;
+//                         font-family: 'Roboto', sans-serif;
+//                         vertical-align: middle;
+//                         position: relative;
+//                         top: 8px;
+//                     }
+//                 }
+//                 .descargar_container__texto {
+//                     font-size: 1.4rem;
+//                     line-height: 1.5;
+//                     font-family: 'Roboto', sans-serif;
+//                     font-weight: lighter;
+//                     margin-top: 10px;
+//                 }
+//                 .descargar_container__enlaces {
+//                     display: flex;
+//                     justify-content: center;
+//                     margin-top: 10px;
+//                     .descargar_container__enlace {
+//                         width: 120px;
+//                         height: 36px;
+//                         background-image: url(./assets/googleplay.png);
+//                         background-size: contain;
+//                         background-position: center;
+//                         background-repeat: no-repeat;
+//                     }
+//                     .appstore {
+//                         background-image: url(./assets/appstore.png);
+//                     }
+//                 }
+//             }
+//         }
+//         .enlaces {
+//             order: 2;
+//             max-width: 80%;
+//             width: 1200px;
+//             height: auto;
+//             display: flex;
+//             flex-wrap: wrap;
+//             justify-content: space-between;
+//             align-items: center;
+//             .enlace_container {
+//                 width: 33%;
+//                 min-height: 50px;
+//                 display: flex;
+//                 margin-bottom: 20px;
+//                 padding-right: 10px;
+//                 img {
+//                     width: 50px;
+//                     height: 50px;
+//                 }
+//                 .enlace_container__texto {
+//                     .enlace_container__enlace {
+//                         font-size: 1.5rem;
+//                         line-height: 1.5;
+//                         font-family: 'Roboto', sans-serif;
+//                         font-weight: lighter;
+//                         color: $color-fuente-secundario;
+//                     }
+//                     .enlace_container__parrafo {
+//                         word-wrap: break-word;
+//                         font-size: 1.3rem;
+//                         line-height: 1.5;
+//                         font-family: 'Roboto', sans-serif;
+//                         font-weight: lighter;
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }

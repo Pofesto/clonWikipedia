@@ -1,0 +1,407 @@
+//-------------------->HEADER<--------------------
+//header-container
+.header-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    //header-container->img
+    img {
+        order: 2;
+        display: inline-block;
+        vertical-align: middle;
+        position: absolute;
+        top: 200px;
+    }
+    //header-container->logotipo-container
+    .logotipo-container {
+        display: flex;
+        flex-direction: column;
+        //header-container->logotipo-container->logotipo-container__logo
+        .logotipo-container__logo {
+            display: inline-block;
+            vertical-align: middle;
+        }
+        //header-container->logotipo-container->logotipo-container__eslogan
+        .logotipo-container__eslogan {
+            display: inline-block;
+        }
+
+    }
+}
+//-------------------->SECTION IDIOMAS<--------------------
+.container-idioma {
+    height: 32.5rem;
+    width: 480px;
+    margin: 0 auto;
+    margin-top: 10px;
+    position: relative;
+    .contaier-idioma__articulo {
+        width: 130px;
+        height: 40px;
+        float: none;
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        a {
+            font-weight: 700;
+            color: $color-fuente-secundario;
+            font-size: 1.3rem;
+        }
+        p {
+            color: $color-fuente-principal;
+            font-size: 1.3rem;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+    }
+    :nth-child(1) {
+        top: 0;
+        left: 10%;
+    }
+    :nth-child(2) {
+        top: 20%;
+        left: 5%;
+    }
+    :nth-child(3) {
+        top: 40%;
+        left: 0;
+    }
+    :nth-child(4) {
+        top: 60%;
+        left: 5%;
+    }
+    :nth-child(5) {
+        top: 80%;
+        left: 10%;
+    }
+    :nth-child(6) {
+        top: 0;
+        left: calc(90% - 130px);
+    }
+    :nth-child(7) {
+        top: 20%;
+        left: calc(95% - 130px);
+    }
+    :nth-child(8) {
+        top: 40%;
+        left: calc(100% - 130px);
+    }
+    :nth-child(9) {
+        top: 60%;
+        left: calc(95% - 130px);
+    }
+    :nth-child(10) {
+        top: 80%;
+        left: calc(90% - 130px);
+    }
+}
+//-------------------->NAV<--------------------
+.form_container {
+    max-width: 95%;
+    width: 450px;
+    height: 4.4rem;
+    margin: 0 auto;
+    margin-top: 0;
+    text-align: center;
+    vertical-align: middle;
+    display: flex;
+    border: 1px solid $color-fuente-principal;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    bottom: 20px;
+    transition-property: all;
+    button {
+        height: 44px;
+        width: 55px;
+        border: 1px solid $color-fuente-principal;
+        border-right: 0;
+        background-color: $color-fuente-secundario;
+        span {
+            width: 22px;
+            height: 22px;
+            background-image: url('./assets/search.png');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            display: inline-block;
+        }
+    }
+    input {
+        max-width: 82%;
+        width: 420px;
+        height: 4.2rem;
+        border: 3px solid blue;
+        position: relative;
+        display: inline-block;
+        padding-left: 10px;
+    }
+    input:focus {
+        border-color: blue;
+        box-shadow: 1px 1px 1px blue inset, 1px 1px 8px blue;
+        outline: 0 none;
+    }
+    .form_container_desplegable {
+        display: flex;
+        position: absolute;
+        right: 18%;
+        p {
+            vertical-align: middle;
+        }
+        span {
+            width: 10px;
+            height: 10px;
+            background-image: url('./assets/down_arrow.png');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            display: inline-block;
+            position: relative;
+            top: 2px;
+            vertical-align: center;
+        }
+    }
+}
+nav {
+}
+.desplegable_container {
+    z-index: 2;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 271px;
+    border: 1px solid $color-fuente-principal;
+    height: 35px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 3.0rem;
+    position: relative;
+    background-color: white;
+    .desplegable_container__logo_idiomas {
+        width: 2.2rem;
+        height: 2.2rem;
+        background-image: url('./assets/idiomas.PNG');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        display: inline-block;
+        position: relative;
+        top: 1px;
+        left: 2px;
+    }
+    p {
+        font-size: 1.4rem;
+        color: $color-fuente-secundario;
+        font-weight: 700;
+        line-height: 1;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    .desplegable_container__logo_downarrow {
+        width: 2.2rem;
+        height: 2.2rem;
+        background-image: url('./assets/down_arrow_blue.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        display: inline-block;
+        position: relative;
+        top: 2px;
+        right: 2px;
+    }
+}
+.linea_desplegable {
+    z-index: 1;
+    background-color: #c8ccd1;
+    max-width: 460px;
+    width: 80%;
+    margin: 0 auto;
+    height: 1px;
+    position: relative;
+    bottom: 48px;
+}
+
+.separador_nav_main {
+    width: 98%;
+    margin: 0 auto;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    .wikis_container {
+        order: 2;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        .wikimedia_container {
+            height: auto;
+            width: 96%;
+            margin: 0 auto;
+            text-align: center;
+            margin-bottom: 20px;
+            position: absolute;
+            top: 580px;
+            .wikimedia_container__logo {
+                display: inline-block;
+                width: 40px;
+                height: 40px;
+                background-image: url(./assets/wikimedia.png);
+                background-size: contain;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+            .wikimedia_container__texto {
+                font-size: 1.4rem;
+                line-height: 1.5;
+                font-family: 'Roboto', sans-serif;
+                font-weight: lighter;
+            }
+            .wikimedia_container_enlace {
+                font-size: 1.3rem;
+                line-height: 1.5;
+                font-family: 'Roboto', sans-serif;
+                color: $color-fuente-secundario;
+            }
+        }
+        .descargar_container {
+            order: 3;
+            height: auto;
+            width: 96%;
+            margin: 0 auto;
+            text-align: center;
+            margin-top: 20px;
+            background-color: #f8f9fa;
+            .descargar_container__logoYtitulo {
+                width: 280px;
+                display: flex;
+                margin: 0 auto;
+                justify-content: space-around;
+                .descargar_container__logo {
+                    display: inline-block;
+                    width: 30px;
+                    height: 30px;
+                    background-image: url(./assets/descargar.png);
+                    background-size: contain;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    vertical-align: middle;
+                }
+                .descargar_container__titulo {
+                    font-size: 1.4rem;
+                    line-height: 1.5;
+                    font-family: 'Roboto', sans-serif;
+                    vertical-align: middle;
+                    position: relative;
+                    top: 8px;
+                }
+            }
+            .descargar_container__texto {
+                font-size: 1.4rem;
+                line-height: 1.5;
+                font-family: 'Roboto', sans-serif;
+                font-weight: lighter;
+                margin-top: 10px;
+            }
+            .descargar_container__enlaces {
+                display: flex;
+                justify-content: center;
+                margin-top: 10px;
+                .descargar_container__enlace {
+                    width: 120px;
+                    height: 36px;
+                    background-image: url(./assets/googleplay.png);
+                    background-size: contain;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                }
+                .appstore {
+                    background-image: url(./assets/appstore.png);
+                }
+            }
+
+        }
+    }
+    .enlaces {
+        order: 1;
+        max-width: 80%;
+        width: 1200px;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 120px;
+        .enlace_container {
+            width: 33%;
+            min-height: 50px;
+            display: flex;
+            margin-bottom: 20px;
+            padding-right: 10px;
+            img {
+                width: 50px;
+                height: 50px;
+            }
+            .enlace_container__texto {
+                .enlace_container__enlace {
+                    font-size: 1.5rem;
+                    line-height: 1.5;
+                    font-family: 'Roboto', sans-serif;
+                    font-weight: lighter;
+                    color: $color-fuente-secundario;
+                }
+                .enlace_container__parrafo {
+                    word-wrap: break-word;
+                    font-size: 1.3rem;
+                    line-height: 1.5;
+                    font-family: 'Roboto', sans-serif;
+                    font-weight: lighter;
+                }
+            }
+        }
+    }
+}
+.separador_main_footer {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+footer {
+    height: auto;
+    .footer_container {
+        display: flex;
+        justify-content: center;
+        height: auto;
+        p {
+            text-align: center;
+            font-size: 1.2rem;
+            line-height: 1.5;
+            font-family: 'Roboto', sans-serif;
+            font-weight: lighter;
+            a {
+                font-size: 1.2rem;
+                line-height: 1.5;
+                font-family: 'Roboto', sans-serif;
+                font-weight: lighter;
+                color: $color-fuente-secundario;
+            }
+            .separador {
+                display: inline-block;
+                width: 4px;
+                height: 4px;
+                border-radius: 2px;
+                background-color: black;
+                margin-left: 6px;
+                margin-right: 4px;
+            }
+        }
+    }
+}

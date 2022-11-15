@@ -1,0 +1,36 @@
+//-------------------->HEADER<--------------------
+//header-container
+.header-container {
+    width: auto;
+    height: 100px;
+    margin-top: 30px;
+    //header-container->img
+    img {
+        width: 200px;
+        height: auto;
+    }
+    //header-container->logotipo-container
+    .logotipo-container {
+        margin-top: 30px;
+        width: auto;
+        height: 70px;
+        //header-container->logotipo-container->logotipo-container__logo
+        .logotipo-container__logo {
+            width: 165px;
+            height: 27px;
+            background-image: url("./assets/wikipedia_logo_escrito.PNG");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            margin: 0 auto;
+        }
+        //header-container->logotipo-container->logotipo-container__eslogan
+        .logotipo-container__eslogan {
+            text-align: center;
+            font-size: 1.4rem;
+            font-weight: lighter;
+        }
+
+    }
+}
+//-------------------->SECTION IDIOMAS<--------------------
